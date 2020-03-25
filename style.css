@@ -81,11 +81,11 @@ header {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 20px auto;
+  margin: auto;
 }
 
 p {
-  font-family: inherit;
+  font-family: var(--font-2);
   font-size: 14px;
   text-align: center;
   font-weight: 300;
@@ -227,19 +227,25 @@ img {
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 500px) {
   .container {
-    max-width: 510px;
+    max-width: 500px;
   }
 
   .welcome {
-    max-width: 300px;
+    max-width: 500px;
     margin: 30% auto;
+  }
+
+  .title {
+    font-size: 51px;
   }
 
   .propouse {
     max-width: 400px;
     margin: 20px auto;
+    font-size: 24px;
+    font-weight: 300;
   }
 
   .partner-list {
@@ -276,13 +282,15 @@ img {
   }
 
   .member-2 {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .member-4 {
     margin-top: 10px;
   }
+}
 
+@media screen and (min-width: 501px) (max-width: 800px) {
   .partner-list :nth-child(2n) {
     margin-right: 0;
   }
@@ -303,5 +311,13 @@ img {
 
   .welcome {
     margin: 15% auto;
+  }
+
+  .member-info {
+    flex-basis: calc(25% - 30px);
+  }
+
+  .partner-list :last-child {
+    margin-right: 0;
   }
 }
